@@ -14,7 +14,7 @@ subsetdata$Sub_metering_2 <- as.numeric(subsetdata$Sub_metering_2)
 subsetdata$Sub_metering_3 <- as.numeric(subsetdata$Sub_metering_3)
 
 
-png("plot3.png", width = 450, height = 450)
+png("plot3.png", width = 480, height = 480)
 with(subsetdata, plot(datetime, Sub_metering_1, type = "l", col = "black",
                       xlab = "", ylab = "Energy sub metering"))
 lines(subsetdata$datetime, subsetdata$Sub_metering_2, 
